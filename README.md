@@ -1,2 +1,9 @@
 # basic_boilerPlate
-Basic Boiler Plate - HTML, CSS, NORMALIZE, JS 
+Basic Boiler Plate - 
+
+Quick way to save time during setting up a project
+
+HTML 
+CSS
+NORMALIZE
+JS 
