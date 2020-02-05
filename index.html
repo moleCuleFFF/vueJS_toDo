@@ -11,15 +11,50 @@
 
         <!-- Mob First Set up -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+
+        <!-- set up vue -->
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
+
         <!-- dependencies -->
-        <link rel="stylesheet" src="main.css">
-        <link rel="stylesheet" src="normalize.css">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="main.css">
 
         <!-- script defered until dom content loaded, ie9 << X -->
         <script src="script.js" defer></script>
     </head>
     <body>
 
+        
+        <!-- VUE app below -->
+        <div id="app">
+
+            <!-- aim: use inputs to store data in object that is then displayed to the user -->
+
+
+            <!-- Inputs here pass to the empty listItem key in the data Object  -->
+            <div class="add_item_items">
+            <input type="text" class="input_title" v-model="listItem.title" placeholder="Goal">
+            <input type="text" class="input_des" v-model="listItem.des" placeholder="description">
+            <input type="date" class="input_date" v-model="listItem.date">
+
+            <!-- the button passes the values from the listItem as a object to the list array - the list array is used for the component -->
+            <button @click="list.push(listItem)">Add Goal</button>
+            </div>
+
+            <!-- vue compoent will be loaded below and updated each time a new list item is created above -->
+            <div class="goal_display">
+                <goal_template 
+                v-for="itteration in list"
+                :goal_title="itteration.title"
+                :goal_description="itteration.des"
+                :goal_dateSet="itteration.date"
+                ></goal_template>
+            </div>
+
+
+            
+        
+                
+        </div>
     </body>
     </html>

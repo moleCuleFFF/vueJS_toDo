@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box; }
+
+.add_item_items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto; }
+  .add_item_items input {
+    margin: 10px 0;
+    padding: 5px;
+    box-shadow: none;
+    width: 100%; }
+  .add_item_items .input_date {
+    width: 75%; }
+  .add_item_items button {
+    width: 25%;
+    margin: 10px 0; }
+
+/*# sourceMappingURL=main.css.map */

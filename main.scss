@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.add_item_items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    input{
+        margin: 10px 0;
+        padding: 5px;
+        box-shadow: none;
+        width: 100%;
+    }
+    .input_date{
+        width: 75%;
+    }
+    button{
+        width: 25%;
+        margin: 10px 0;
+    }
+}
