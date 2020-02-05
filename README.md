@@ -1,9 +1,3 @@
-# basic_boilerPlate
-Basic Boiler Plate - 
+# Vue Js todo app
 
-Quick way to save time during setting up a project
-
-HTML 
-CSS
-NORMALIZE
-JS 
+quick easy play around with Vue 
